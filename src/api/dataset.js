@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 export function fetchList(params) {
   return request({
-    url:'/dataset/list',
+    url:'/custom/list',
     method:'get',
     params:params
   })
@@ -9,14 +9,14 @@ export function fetchList(params) {
 
 export function createDataset(data) {
   return request({
-    url:'/dataset/create',
+    url:'/custom/create',
     method:'post',
     data:data
   })
 }
 export function updateShowStatus(data) {
   return request({
-    url:'/dataset/update/showStatus',
+    url:'/custom/update/showStatus',
     method:'post',
     data:data
   })
@@ -24,7 +24,7 @@ export function updateShowStatus(data) {
 
 export function updateFactoryStatus(data) {
   return request({
-    url:'/dataset/update/factoryStatus',
+    url:'/custom/update/factoryStatus',
     method:'post',
     data:data
   })
@@ -32,14 +32,14 @@ export function updateFactoryStatus(data) {
 
 export function getDataset(id) {
   return request({
-    url:'/dataset/'+id,
+    url:'/custom/'+id,
     method:'get',
   })
 }
 
 export function updateDataset(id,data) {
   return request({
-    url: '/dataset/update/' + id,
+    url: '/custom/update/' + id,
     method: 'post',
     data: data
   })
@@ -47,7 +47,7 @@ export function updateDataset(id,data) {
 
 export function deleteDataset(id) {
   return request({
-    url:'/dataset/delete/'+id,
+    url:'/custom/delete/'+id,
     method:'get',
   })
 }

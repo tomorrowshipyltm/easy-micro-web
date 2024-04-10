@@ -47,22 +47,6 @@
         <el-table-column label="描述"  align="center">
           <template slot-scope="scope">{{scope.row.description}}</template>
         </el-table-column>
-        <el-table-column label="作者" width="100" align="center">
-          <template slot-scope="scope">{{scope.row.author}}</template>
-        </el-table-column>
-        <el-table-column label="数据量" width="100" align="center">
-          <template slot-scope="scope">{{scope.row.datasetCount}}</template>
-        </el-table-column>
-        <el-table-column label="是否显示" width="100" align="center">
-          <template slot-scope="scope">
-            <el-switch
-              @change="handleShowStatusChange(scope.$index, scope.row)"
-              :active-value="1"
-              :inactive-value="0"
-              v-model="scope.row.showStatus">
-            </el-switch>
-          </template>
-        </el-table-column>
         <el-table-column label="操作" width="200" align="center">
           <template slot-scope="scope">
             <el-button
