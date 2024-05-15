@@ -34,13 +34,8 @@ export const constantRouterMap = [
     },
     {
       name: 'document',
-      path: 'https://www.macrozheng.com',
-      meta: {title: '学习教程', icon: 'document'}
-    },
-    {
-      name: 'video',
-      path: 'https://www.macrozheng.com/mall/catalog/mall_video.html',
-      meta: {title: '视频教程', icon: 'video'}
+      path: 'https://www.yuque.com/u1862689/pesoto/og4rrm4tbhnlvgxs?singleDoc',
+      meta: {title: '学习环境', icon: 'document'}
     },
     ]
   }
